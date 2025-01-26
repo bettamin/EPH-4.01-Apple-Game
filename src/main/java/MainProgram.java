@@ -1,5 +1,7 @@
 import KAGO_framework.Config;
 import KAGO_framework.control.MainController;
+import my_project.model.Apple;
+import my_project.model.Pear;
 
 public class MainProgram {
 
@@ -13,5 +15,9 @@ public class MainProgram {
      */
     public static void main (String[] args){
         MainController.startFramework();
+        Apple myApple = new Apple(50,50);
+        myApple.update(24);
+        Pear myPear = new Pear(150,150);
+        myPear.update(24);
     }
 }
